@@ -6,7 +6,7 @@ from langchain.vectorstores import FAISS
 from langchain.chains.question_answering import load_qa_chain
 from langchain_community.chat_models import ChatOpenAI
 
-OPENAI_API_KEY = "sk-proj-jav82jFwv0CfJrX2hRAJT3BlbkFJnRmREQzMyfKpRCFKrcCa" #Pass your key here
+OPENAI_API_KEY = "sk-proj-989e1aXqJAAW6k2gxVeMT3BlbkFJukC3UANuy2rTyVKpb09V" #Pass your key here
 
 # Function to update message log
 def update_message_log(user_input):
