@@ -51,8 +51,8 @@ if file is not None:
     if 'message_log' not in st.session_state:
         st.session_state['message_log'] = ""
     # get user question
-    #user_question = st.text_input("Type Your question here")
-    user_question = st.chat_input("Type Your question here")
+    user_question = st.text_input("Type Your question here")
+    #user_question = st.chat_input("Type Your question here")
     if user_question:
         st.subheader(user_question)
         
