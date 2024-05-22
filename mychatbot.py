@@ -5,9 +5,13 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.chains.question_answering import load_qa_chain
 from langchain_community.chat_models import ChatOpenAI
+from dotenv import load_dotenv
+import os
 
-OPENAI_API_KEY = "sk-proj-fq9LMoZ8rfJ6hH6ZMzeLT3BlbkFJ5ACFpEywql2X95w5YisG" #Pass your key here
-
+# Load environment variables from '.env' file
+load_dotenv()
+# Accessing variables
+OPENAI_API_KEY = os.getenv("API_KEY")
 # Function to update message log
 def update_message_log(user_input):
     # Append new input to the existing log with a line break for separation
