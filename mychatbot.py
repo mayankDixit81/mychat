@@ -22,7 +22,7 @@ st.header("My first Chatbot")
 
 with  st.sidebar:
     st.title("Your Documents")
-    file = st.file_uploader(" Upload a PDf file and start asking questions", type="pdf")
+    file = st.file_uploader("Upload a PDf file and start asking questions", type="pdf")
 
 #Extract the text
 if file is not None:
@@ -78,4 +78,3 @@ if file is not None:
         # Display the ongoing message log
         update_message_log(response)
         st.text(st.session_state['message_log'])
-
