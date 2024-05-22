@@ -12,6 +12,7 @@ import os
 load_dotenv()
 # Accessing variables
 OPENAI_API_KEY = os.getenv("API_KEY")
+st.write("Deployed Streamlit version:", st.__version__)
 # Function to update message log
 def update_message_log(user_input):
     # Append new input to the existing log with a line break for separation
